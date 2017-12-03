@@ -1,0 +1,12 @@
+main.o: main.cpp
+	g++ main.cpp -c -o main.o
+
+library.o: library.cpp
+	g++ library.cpp -c -o library.o
+
+main: main.o library.o
+	g++ main.o library.o -o main
+
+
+
+
