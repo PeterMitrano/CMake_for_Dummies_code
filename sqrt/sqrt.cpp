@@ -1,6 +1,6 @@
 #include <cmath>
 
-#include "sqrt.h"
+#include "sqrt/sqrt.h"
 
 namespace peter {
 

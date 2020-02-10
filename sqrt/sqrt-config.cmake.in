@@ -6,7 +6,5 @@
 
 # Compute paths
 get_filename_component(SQRT_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
-set(SQRT_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+include("${SQRT_CMAKE_DIR}/sqrt-targets.cmake")
 
-set(SQRT_LIBRARIES sqrt)
-set(SQRT_EXECUTABLE clsqrt)
