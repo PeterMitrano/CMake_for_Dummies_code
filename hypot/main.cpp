@@ -1,7 +1,7 @@
 #include <string>
 #include <iostream>
 
-#include <sqrt.h>
+#include <sqrt/sqrt.h>
 
 int main(int argc, char **argv) {
   // too lazy to do more error checking

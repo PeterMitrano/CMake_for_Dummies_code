@@ -1,13 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 project(sqrt)
 
-include_directories(include)
-
-
 add_library(sqrt sqrt.cpp)
-target_include_directories(sqrt INTERFACE
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/sqrt>
-  $<INSTALL_INTERFACE:include/sqrt>)
+target_include_directories(sqrt PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
 
 add_subdirectory(test)
 
